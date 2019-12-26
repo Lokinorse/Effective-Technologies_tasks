@@ -80,8 +80,8 @@ function createRandomFigures($numberOfFigures)
 			case 3:
 				// Сторона треугольника не может быть больше суммы двух других сторон
 				$triangleRandomA = rand(1, 100);
-                $triangleRandomB = rand(1, 100);
-                //Вычисляем третью сторону треугольника по имеющимся двум
+                		$triangleRandomB = rand(1, 100);
+               			//Вычисляем третью сторону треугольника по имеющимся двум
 				$triangleRandomC = sqrt($triangleRandomA*$triangleRandomA
 				+ $triangleRandomB*$triangleRandomB);
 				array_push($figuresArray, new Triangle($triangleRandomA, $triangleRandomB, $triangleRandomC));
